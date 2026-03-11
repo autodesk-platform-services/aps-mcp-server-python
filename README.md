@@ -1,4 +1,4 @@
-# APS MCP Server Authentication Samples
+# APS MCP Server - Python Samples
 
 This repository contains three minimal [Model Context Protocol (MCP)](https://modelcontextprotocol.io) servers built with Python, [uv](https://docs.astral.sh/uv/), and [FastMCP](https://gofastmcp.com). Each server demonstrates a different authentication approach for calling [Autodesk Platform Services (APS)](https://aps.autodesk.com) APIs.
 
@@ -7,6 +7,9 @@ This repository contains three minimal [Model Context Protocol (MCP)](https://mo
 | `mcp_server_2lo` | Client Credentials (aka 2-legged) OAuth flow | OSS | App-owned resources, no user context needed |
 | `mcp_server_ssa` | Secure Service Accounts | Data Management | Automated workflows that require user-context APIs |
 | `mcp_server_3lo` | Authorization Code (aka 3-legged) OAuth flow | Data Management | Acting on behalf of real users with explicit consent |
+
+> [!TIP]
+> See the [wiki](https://github.com/autodesk-platform-services/aps-mcp-server-python/wiki/MCP-Auth-Patterns) for more details about these auth patterns.
 
 ---
 
@@ -38,7 +41,7 @@ mcp_server_3lo/    # Example MCP server with 3-legged authentication
 ## Installation
 
 ```bash
-git clone <this-repo>
+git clone https://github.com/autodesk-platform-services/aps-mcp-server-python
 cd aps-mcp-server-python
 uv sync
 ```
