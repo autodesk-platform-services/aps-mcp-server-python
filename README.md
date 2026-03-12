@@ -72,6 +72,9 @@ base64 -i private_key.pem
 
 # Linux
 base64 -w 0 private_key.pem
+
+# Windows PowerShell
+[Convert]::ToBase64String([System.IO.File]::ReadAllBytes( private_key.pem ))
 ```
 
 ---
